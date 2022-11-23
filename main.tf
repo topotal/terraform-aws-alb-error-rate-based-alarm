@@ -15,8 +15,8 @@ resource "aws_cloudwatch_metric_alarm" "alarm" {
   alarm_description         = var.alarm_description
   insufficient_data_actions = var.insufficient_data_actions
 
-  alarm_actions = [data.aws_sns_topic.sns.arn]
-  ok_actions    = [data.aws_sns_topic.sns.arn]
+  alarm_actions = [var.sns_topic_arn]
+  ok_actions    = [var.sns_topic_arn]
 
   metric_query {
     id          = "erate"

@@ -1,6 +1,6 @@
-variable "sns_topic_name" {
+variable "sns_topic_arn" {
   type        = string
-  description = "The name of the SNS topic to use for alarm notifications"
+  description = "The arn of the SNS topic to use for alarm notifications"
 }
 
 variable "dimensions" {

@@ -92,7 +92,7 @@ No modules.
 | <a name="input_evaluation_periods"></a> [evaluation\_periods](#input\_evaluation\_periods) | The number of periods over which data is compared to the specified threshold | `string` | `"1"` | no |
 | <a name="input_insufficient_data_actions"></a> [insufficient\_data\_actions](#input\_insufficient\_data\_actions) | The list of actions to take when the alarm is in insufficient data state | `list(string)` | `[]` | no |
 | <a name="input_slo"></a> [slo](#input\_slo) | The SLO to use for the alarm | `number` | `99.9` | no |
-| <a name="input_sns_topic_name"></a> [sns\_topic\_name](#input\_sns\_topic\_name) | The name of the SNS topic to use for alarm notifications | `string` | n/a | yes |
+| <a name="input_sns_topic_arn"></a> [sns\_topic\_arn](#input\_sns\_topic\_arn) | The arn of the SNS topic to use for alarm notifications | `string` | n/a | yes |
 | <a name="input_window"></a> [window](#input\_window) | The window to use for the metrics | `number` | `3600` | no |
 
 ## Outputs
