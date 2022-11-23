@@ -13,7 +13,7 @@ module "alb-error-rate-based-alarm" {
   source  = "topotal/alb-error-rate-based-alarm/aws"
   version = "0.1.0"
 
-  sns_topic_name = "YOUR_SNS_TOPIC_NAME_FOR_NOTIFICATION"
+  sns_topic_arn  = "YOUR_SNS_TOPIC_ARN_FOR_NOTIFICATION"
   dimensions     = {
     LoadBalancer = "app/YOUR_LOAD_BALANCER_NAME/YOUR_LOAD_BALANCER_ID"
   }
@@ -27,7 +27,7 @@ module "alb-error-rate-based-alarm" {
   source  = "topotal/alb-error-rate-based-alarm/aws"
   version = "0.1.0"
 
-  sns_topic_name = "YOUR_SNS_TOPIC_NAME_FOR_NOTIFICATION"
+  sns_topic_arn  = "YOUR_SNS_TOPIC_ARN_FOR_NOTIFICATION"
   dimensions     = {
     LoadBalancer = "app/YOUR_LOAD_BALANCER_NAME/YOUR_LOAD_BALANCER_ID"
     TargetGroup  = "targetgroup/YOUR_TARGET_GROUP_NAME/YOUR_TARGET_GROUP_ID"
@@ -44,7 +44,7 @@ module "alb-error-rate-based-alarm" {
   source  = "topotal/alb-error-rate-based-alarm/aws"
   version = "0.1.0"
 
-  sns_topic_name = "YOUR_SNS_TOPIC_NAME_FOR_NOTIFICATION"
+  sns_topic_arn  = "YOUR_SNS_TOPIC_ARN_FOR_NOTIFICATION"
   dimensions     = {
     LoadBalancer = "app/YOUR_LOAD_BALANCER_NAME/YOUR_LOAD_BALANCER_ID"
   }
