@@ -2,6 +2,8 @@
 
 Terraform module for creating AWS ALB Error rate based CloudWatch Alarm.
 
+https://registry.terraform.io/modules/topotal/alb-error-rate-based-alarm/aws/latest
+
 ## Usage
 
 Copy and paste into your Terraform configuration, insert the variables, and run terraform init:
@@ -28,7 +30,7 @@ module "alb-error-rate-based-alarm" {
   sns_topic_name = "YOUR_SNS_TOPIC_NAME_FOR_NOTIFICATION"
   dimensions     = {
     LoadBalancer = "app/YOUR_LOAD_BALANCER_NAME/YOUR_LOAD_BALANCER_ID"
-    TargetGroup = "targetgroup/YOUR_TARGET_GROUP_NAME/YOUR_TARGET_GROUP_ID"
+    TargetGroup  = "targetgroup/YOUR_TARGET_GROUP_NAME/YOUR_TARGET_GROUP_ID"
   }
 }
 ```
