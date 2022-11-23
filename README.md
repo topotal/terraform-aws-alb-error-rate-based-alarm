@@ -11,7 +11,7 @@ Copy and paste into your Terraform configuration, insert the variables, and run 
 ```terraform
 module "alb-error-rate-based-alarm" {
   source  = "topotal/alb-error-rate-based-alarm/aws"
-  version = "0.1.0"
+  version = "0.2.1"
 
   sns_topic_arn  = "YOUR_SNS_TOPIC_ARN_FOR_NOTIFICATION"
   dimensions     = {
@@ -25,7 +25,7 @@ or you can speficy `TargetGroup` to dimensions if you want to monitor only for T
 ```terraform
 module "alb-error-rate-based-alarm" {
   source  = "topotal/alb-error-rate-based-alarm/aws"
-  version = "0.1.0"
+  version = "0.2.1"
 
   sns_topic_arn  = "YOUR_SNS_TOPIC_ARN_FOR_NOTIFICATION"
   dimensions     = {
@@ -42,7 +42,7 @@ This module can also specify slo, burn_rate and window like below:
 ```terraform
 module "alb-error-rate-based-alarm" {
   source  = "topotal/alb-error-rate-based-alarm/aws"
-  version = "0.1.0"
+  version = "0.2.1"
 
   sns_topic_arn  = "YOUR_SNS_TOPIC_ARN_FOR_NOTIFICATION"
   dimensions     = {
