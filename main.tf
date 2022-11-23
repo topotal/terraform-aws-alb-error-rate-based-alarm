@@ -3,10 +3,6 @@ locals {
   threshold    = local.error_budget * var.burn_rate
 }
 
-data "aws_sns_topic" "sns" {
-  name = var.sns_topic_name
-}
-
 resource "aws_cloudwatch_metric_alarm" "alarm" {
   alarm_name                = var.alarm_name
   comparison_operator       = var.comparison_operator
